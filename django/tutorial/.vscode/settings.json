@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/soichi/anaconda3/bin/python",
+    "python.linting.pylintPath": "pylint_django"
+}

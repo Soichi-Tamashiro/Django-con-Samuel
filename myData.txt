@@ -1,0 +1,13 @@
+Mis Datos:
+- Lote
+- Fecha
+- Cantidad de Concreto Producido
+- Empresa a la que se vende
+- RUC
+- Materiales
+ - Cemento
+ - Agregado 1
+ - Agregado 2
+ - Agua
+ - Aditivo 1
+ - Tiempo de Producción
