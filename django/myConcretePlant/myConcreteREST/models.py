@@ -5,7 +5,7 @@ from django.db import models
 
 class myConcrete_Data(models.Model):
     created = models.DateTimeField(auto_now=True)
-    Fecha = models.DateTimeField(auto_now=True)
+    Fecha = models.DateTimeField(auto_now_add=True, blank=True)
     Cantidad = models.FloatField()
     Empresa = models.CharField(max_length=200, blank=True, default="")
     RUC = models.IntegerField()
