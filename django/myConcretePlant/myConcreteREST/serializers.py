@@ -10,16 +10,17 @@ class myConcrete_Data_Serializer(serializers.ModelSerializer):
         model = myConcrete_Data
         fields = (
             "id",
+            "Lote",
+            "Empresa",
             "Fecha",
             "Cantidad",
-            "Empresa",
+            "T_Producción",
             "RUC",
             "Cemento",
             "Agregado_1",
             "Agregado_2",
             "Agua",
             "Aditivo_1",
-            "T_Producción",
             "owner",
         )
 

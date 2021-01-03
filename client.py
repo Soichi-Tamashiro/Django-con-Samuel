@@ -1,19 +1,20 @@
 import requests
 
-auth_token = "1858750d52d79d24a64bad85a75d3de7313f6956"
+auth_token = "3c0143435c55ec2af2f62791fceaf00f4e603027"
 hed = {"Authorization": "token " + auth_token}
 data = {
     "id": "1",
-    "Fecha": "17:19 pm 02/01/21",
-    "Cantidad": "50",
+    "Lote": "ASSWE1125",
     "Empresa": "Movicreto SAC",
+    "Fecha": "20:19 02/01/21",
+    "Cantidad": "50",
+    "T_Producción": "00:45:00",
     "RUC": "20212522155",
     "Cemento": "20",
     "Agregado_1": "20",
     "Agregado_2": "20",
     "Agua": "80",
     "Aditivo_1": "0",
-    "T_Producción": "00:45:00",
     "owner": "tamalitux",
 }
 
