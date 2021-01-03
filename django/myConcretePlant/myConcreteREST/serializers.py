@@ -20,6 +20,7 @@ class myConcrete_Data_Serializer(serializers.ModelSerializer):
             "Agua",
             "Aditivo_1",
             "T_Producción",
+            "owner",
         )
 
 
