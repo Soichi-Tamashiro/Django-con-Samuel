@@ -88,8 +88,9 @@ def myIndex(request):
         empresas = []
         produccion = []
         col = []
-        context = {}
+
         if request.method == "POST":
+            context = {}
             try:
                 fecha = request.POST.get("fecha")
                 lote = request.POST.get("myLote")
@@ -108,18 +109,18 @@ def myIndex(request):
                     for i in range(len(lista)):
                         col.append(list(lista[i]))
                     context = {
-                        "Lote": data_file[1],
-                        "Empresa": data_file[2],
-                        "Fecha": data_file[3],
-                        "Cantidad": data_file[4],
-                        "T_Producción": data_file[5],
-                        "RUC": data_file[6],
-                        "Cemento": data_file[7],
-                        "Agregado_1": data_file[8],
-                        "Agregado_2": data_file[9],
-                        "Agua": data_file[10],
-                        "Aditivo_1": data_file[11],
-                        "Hora": data_file[12],
+                        "Lote": dato3[dato_final].lote,
+                        "Empresa": dato3[dato_final].empresa,
+                        "Fecha": dato3[dato_final].fecha,
+                        "Cantidad": dato3[dato_final].cantidad,
+                        "T_Producción": dato3[dato_final].t_producción,
+                        "RUC": dato3[dato_final].ruc,
+                        "Cemento": dato3[dato_final].cemento,
+                        "Agregado_1": dato3[dato_final].agregado_1,
+                        "Agregado_2": dato3[dato_final].agregado_2,
+                        "Agua": dato3[dato_final].agua,
+                        "Aditivo_1": dato3[dato_final].aditivo_1,
+                        "Hora": dato3[dato_final].hora,
                         "col": col,
                     }
                 if lote != None:
@@ -140,6 +141,7 @@ def myIndex(request):
                         "Hora": dato2.hora,
                         # "col": col,
                     }
+                # print(context)
             except:
                 dato3 = myConcrete_Data.objects.all()
                 dato_final = len(dato3) - 1
