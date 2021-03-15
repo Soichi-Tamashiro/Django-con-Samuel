@@ -8,7 +8,8 @@ import datetime
 
 class myConcrete_Data(models.Model):
     def lote_string():
-        valor = str(datetime.date.today()).replace("-", "") + "01"
+        valor = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+        # print(datetime.datetime.now().time().hour())
         return valor
 
     lote = models.CharField(max_length=100, default=lote_string)
